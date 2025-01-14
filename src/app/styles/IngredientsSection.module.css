@@ -1,0 +1,105 @@
+.ingredients {
+    padding: 3rem;
+    background-color: #f9f9f9; /* Light gray background for the section */
+    text-align: center;
+  }
+  
+  .ingredients h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00796b;
+    margin-bottom: 2rem;
+  }
+
+  .ingredients p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #01413a;
+    margin-bottom: 2rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted to allow larger cards */
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Increased height for better image visibility */
+    background-color: #e0f7fa; /* Sky blue background */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .imageContainer img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .infoOverlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Ensures elements stack vertically */
+    justify-content: flex-start; /* Aligns items at the top */
+  }
+  
+  .infoOverlay h3 {
+    margin: 0;
+    font-size: 1.2rem; /* Slightly larger font size */
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  .infoOverlay p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem; /* Increased font size for better readability */
+    color: #666;
+  }
+  
+  .seeMoreButton {
+    align-self: flex-start;
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .seeMoreButton:hover {
+    background-color: #004d40;
+  }
+  

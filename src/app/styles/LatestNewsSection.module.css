@@ -1,0 +1,103 @@
+.news {
+  padding: 3rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.news h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00796b;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid with auto-fitting columns */
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px; /* Set a fixed height for the card */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 150px; /* Reduced image height */
+  object-fit: cover;
+  transition: opacity 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover img {
+  opacity: 0.7;
+  filter: blur(5px);
+}
+
+.card .infoOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+.card:hover .infoOverlay {
+  opacity: 1;
+  transform: translate(-50%, -60%);
+}
+
+.card .infoOverlay p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.card .infoOverlay h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.card .infoOverlay p,
+.card .infoOverlay h3 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card .overlayBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+  

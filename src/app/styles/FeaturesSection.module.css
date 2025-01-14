@@ -1,0 +1,52 @@
+
+.features {
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.featureCard {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+}
+
+.iconBox {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.iconBox img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Updated selectors */
+.featureCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.featureCard p {
+  font-size: 0.9rem;
+  color: #666;
+}
